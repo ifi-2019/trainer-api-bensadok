@@ -28,7 +28,7 @@ public class TrainerApi {
             var misty = new Trainer("Misty");
             var staryu = new Pokemon(120, 18);
             var starmie = new Pokemon(121, 21);
-            ash.setPassword(bCryptPasswordEncoder.encode("misty_password"));
+            misty.setPassword(bCryptPasswordEncoder.encode("misty_password"));
             misty.setTeam(List.of(staryu, starmie));
 
             // save a couple of trainers
